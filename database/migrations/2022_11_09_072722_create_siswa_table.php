@@ -23,9 +23,8 @@ class CreateSiswaTable extends Migration
                 //alamat  menggunakan tipe data varchar
                 $table->string('alamat', 200);
                 //menggunakan string  menggunakan tipe data varchar
-                $table->string('jenis kelamin');
+                $table->string('jenis_kelamin');
                 //menggunakan enum  menggunakan tipe data enum
-                $table->enum('kelamin', ['pejantan', 'betina']);
                 $table->timestamps();
             });
         }

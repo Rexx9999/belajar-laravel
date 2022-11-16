@@ -24,11 +24,11 @@
         <form action="welcome.html" method="post">
             <label for="first-name">First Name : </label>
             <br>
-            <input type="text" name="first-name" id="first-name" class="name" placeholder="Dafa">
+            <input type="text" name="first-name" id="first-name" class="name" placeholder="nama pertama">
             <br>
             <label for="last-name">Last Name :</label>
             <br>
-            <input type="text" name="last-name" id="last-name" class="name" placeholder="Alfauzi">
+            <input type="text" name="last-name" id="last-name" class="name" placeholder="nama terakhir">
             <br>
             <label for="gender">Gender :</label>
             <br>
@@ -52,7 +52,7 @@
             <input type="checkbox" name="language" id="">Other
             <br>
             <label for="bio">Bio</label><br>
-            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="masukan bio"></textarea>
             <br>
             <input type="submit" value="Sign Up">
         
