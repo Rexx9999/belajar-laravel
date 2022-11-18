@@ -38,10 +38,10 @@ class KelasController extends Controller
     public function store(Request $request)
     {
 
-        $request->validate([
-            'namakelas' => 'required',
-            'jurusan' => 'required',
-        ]);
+        // $request->validate([
+        //     'namakelas' => 'required',
+        //     'jurusan' => 'required',
+        // ]);
         $query = DB::table('kelas')->insert([
             'nama_kelas' => $request['namakelas'],
             'jurusan' => $request['jurusan'],

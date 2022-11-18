@@ -15,11 +15,10 @@ class CreateKelasTable extends Migration
     {
         Schema::create('kelas', function (Blueprint $table) {
             $table->id();
-            //nama menggunakan tipe data varchar
+            //string/varchar
             $table->string('nama_kelas', 20);
             //menggunakan tipe data varchar
             $table->string('jurusan', 100);
-
             $table->timestamps();
         });
     }
