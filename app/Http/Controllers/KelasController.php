@@ -15,7 +15,8 @@ class KelasController extends Controller
     public function index()
     {
         //
-        return view('kelas.index');
+        $dataKelas = db::table('kelas')->get();
+        return view('kelas.index', compact('dataKelas'));
     }
 
     /**
@@ -59,6 +60,8 @@ class KelasController extends Controller
     public function show($id)
     {
         //
+        $showKelasById = db::table('kelas')->where('id', $id)->first();
+        return view('kelas.show', compact('showKelasById'));
     }
 
     /**

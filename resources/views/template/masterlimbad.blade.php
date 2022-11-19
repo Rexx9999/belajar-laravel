@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ asset ('adminlte/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset ('adminlte/dist/css/adminlte.min.css') }} ">
+    <link rel="stylesheet" href="{{ asset ('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
 </head>
 
 <body class="hold-transition sidebar-mini">

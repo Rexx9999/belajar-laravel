@@ -14,7 +14,9 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        return view('student.index');
+        //untuk mengambil data 
+        $dataSiswa = DB::table('siswa')->get();
+        return view('student.index', compact('dataSiswa'));
     }
 
     /**
@@ -60,6 +62,8 @@ class SiswaController extends Controller
     public function show($id)
     {
         //
+        $showSiswaById = Db::table('siswa')->where('id', $id)->first();
+        return view('student.show', compact('showSiswaById'));
     }
 
     /**

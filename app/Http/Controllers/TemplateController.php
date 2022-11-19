@@ -11,4 +11,9 @@ class TemplateController extends Controller
     {
         return view('template.masterlimbad');
     }
+
+    public function home()
+    {
+        return view('template.home');
+    }
 }
