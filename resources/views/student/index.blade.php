@@ -32,7 +32,7 @@
                 <td>{{ $value->jenis_kelamin}}</td>
                 <td>
                     <a class="btn btn-info mr-3" href="student/{{$value->id}}">Detail</a>
-                    <a class="btn btn-warning mr-3" href="{{$value->id}}/edit">Edit</a>
+                    <a class="btn btn-warning mr-3" href="student/{{$value->id}}/edit/">Edit</a>
                     <button class="btn btn-danger">Delete</button>
                 </td>
               </tr>

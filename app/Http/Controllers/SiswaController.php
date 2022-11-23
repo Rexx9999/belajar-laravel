@@ -75,6 +75,8 @@ class SiswaController extends Controller
     public function edit($id)
     {
         //
+        $showSiswaById = Db::table('siswa')->where('id', $id)->first();
+        return view('student.edit', compact('showSiswaById'));
     }
 
     /**
@@ -87,6 +89,20 @@ class SiswaController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $request->validate([
+            'nama' => 'required',
+            'alamat' => 'required',
+            'jenis_kelamin' => 'required',
+        ]);
+        $query = db::table('siswa')
+            ->where('id', $id)
+            ->update([
+                'nisn' => $request["nisn"],
+                'nama' => $request["nama"],
+                'alamat' => $request["alamat"],
+                'jenis_kelamin' => $request["jenis_kelamin"],
+            ]);
+        return redirect('student');
     }
 
     /**

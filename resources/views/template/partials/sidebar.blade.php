@@ -37,7 +37,7 @@
 
                <li class="nav-item">
                 <a href="{{route ('home')}} " class="nav-link">
-                  <i class="nav-icon fas fa-solid fa-house-blank"></i>
+                    <i class="nav-icon fas fa-solid fa-house-blank"></i>
                   <p>
                     Home
                 </p>
@@ -184,6 +184,28 @@
                             <a href="{{route ('KelasCreate')}}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Isi Data Diri Kelas</p>
+                            </a>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-solid fa-database"></i>
+                        <p>
+                            Database
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{route ('StudentIndex')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Siswa</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route ('KelasIndex')}}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Kelas</p>
                             </a>
                     </ul>
                 </li>

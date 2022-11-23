@@ -1,7 +1,7 @@
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <div class="container-fluid">
+        <div class="container-Wfluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
                     @yield('judul') 
